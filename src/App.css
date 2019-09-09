@@ -32,3 +32,11 @@ cursor: pointer; }
 border-radius: 0;
 border-bottom: 1px solid #38BB6C;
 }
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+/* This is the class name given by the Font Awesome component when icon contains 'spinner' */
+.fa-spinner {
+  /* Apply 'spinner' keyframes looping once every second (1s)  */
+  animation: spinner 2s linear infinite;
+}
